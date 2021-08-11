@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema",
-    "id": "https://github.com/xzaa/json_schemas/data_product_schema.json",
+    "id": "https://raw.githubusercontent.com/xzaa/json_schemas/main/data_product_schema.json",
     "type": "object",
     "title": "The root schema",
     "required": [
