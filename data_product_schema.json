@@ -1,0 +1,58 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema",
+    "id": "https://github.com/xzaa/json_schemas/data_product_schema.json",
+    "type": "object",
+    "title": "The root schema",
+    "required": [
+        "data_product_code",
+        "source_data_products",
+        "structure_element"
+    ],
+    "properties": {
+        "data_product_code": {
+            "id": "#data_product_code",
+            "type": "string",
+            "title": "The data_product_code schema"
+        },
+        "source_data_products": {
+            "id": "#source_data_products",
+            "type": "array",
+            "title": "The source_data_products schema",
+            "items": {
+                "id": "#items",
+                "type": "string"
+            }
+        },
+        "structure_element": {
+            "id": "#structure_element",
+            "type": "object",
+            "title": "The structure_element schema",
+            "required": [
+                "entity",
+                "is_integartion_satelite",
+                "attributes"
+            ],
+            "properties": {
+                "entity": {
+                    "id": "#entity",
+                    "type": "string",
+                    "title": "The entity schema"
+                },
+                "is_integartion_satelite": {
+                    "id": "#is_integartion_satelite",
+                    "title": "The is_integartion_satelite schema",
+                    "type": "boolean"
+                },
+                "attributes": {
+                    "id": "#attributes",
+                    "type": "array",
+                    "title": "The attributes schema",
+                    "items": {
+                        "id": "#items",
+                        "type": "string"
+                    }
+                }
+            }
+        }
+    }
+}
